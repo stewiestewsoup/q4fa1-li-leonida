@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<link rel="stylesheet" href="style.css">
+<body div class="body">
+    <h1>Sign In</h1>
+    <form>
+
+        <label for="name">Name: </label>
+        <input type="text" id="name" name="Name" required> <br><br>
+
+        <label for="pname">Preferred username: </label>
+        <input type="text" id="pname" name="PreferredName" required> <br><br>
+
+        <label for="pass">Password: </label>
+        <input type="password" id="pass" name="Password" required> <br><br>
+        
+        <label for="email">Email Address: </label>
+        <input type="email" id="email" name="EmailAddress" required pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$"><br><br>
+        
+        <label for="address">Address: </label>
+        <input type="address" id="address" name="Address" required>
+
+        <p>Select Gender:</p>
+        <input type="radio" id="male" name="gender" value="Male" required>
+        <label for="male">Male</label>
+
+        <input type="radio" id="fmale" name="gender" value="Female" required>
+        <label for="fmale">Female</label>
+
+        <input type="radio" id="pfn" name="gender" value="PreferNotToMention" required>
+        <label for="pfn">Prefer Not To Mention</label><br><br>
+
+        <label for="prg">Share your interests!</label><br>
+        <textarea id="txt" name="prg" rows="4" cols="50" required></textarea> <br><br>
+
+        <input type="reset" value="Reset">
+        <input type="submit" value="Submit Form">
+    </form>
+</body>
+</html>
